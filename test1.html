@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> test jquery
+		</title> 
+		</head>
+	<body>  
+
+		<div  id="divID"   width=250  height=250  ></div>
+	</body>
+	<script language="javascript">
+		
+               var jsdom = require("jsdom").jsdom;
+               global.$ = require('jquery/dist/jquery')(jsdom().createWindow());
+
+		$(document).ready(function(){
+			$("#divID").html("hello world" ) ;
+
+		});
+	</script>
+</html>
+
